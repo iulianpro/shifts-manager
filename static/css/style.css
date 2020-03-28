@@ -13,7 +13,7 @@ body {
 }
 
 .right-area {
-    margin-top: 55px;
+    margin-top: 0;
 }
 
 .left-area {
@@ -30,4 +30,30 @@ body {
 
 .section-app {
     margin-bottom: 50px;
+}
+
+.left-menu {
+    margin-top: 75px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media (min-width: 576px) {
+    .left-menu {
+        margin-top: 75px;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+}
+
+@media (min-width: 992px) {
+    .left-menu {
+        margin-top: 125px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .right-area {
+        margin-top: 55px;
+    }
 }
