@@ -1,18 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+{% extends 'base.html'%} {% block calendar %}
+
+<header>
+    <div class="row no-gutters d-none d-sm-flex p-1 bg-secondary text-white">
+        <h6 class="col-sm pt-2 text-center">Monday</h6>
+        <h6 class="col-sm pt-2 text-center">Tuesday</h6>
+        <h6 class="col-sm pt-2 text-center">Wednesday</h6>
+        <h6 class="col-sm pt-2 text-center">Thursday</h6>
+        <h6 class="col-sm pt-2 text-center">Friday</h6>
+        <h6 class="col-sm pt-2 text-center">Saturday</h6>
+        <h6 class="col-sm pt-2 text-center">Sunday</h6>
+    </div>
+</header>
+
+<div class="row no-gutters border border-right-0 border-bottom-0">
     {% for shift in shifts %}
-        <p>{{shift.shift_date}}</p>
-        <p>{{shift.emploee_one}}</p>
-        <p>{{shift.emploee_two}}</p>
-        <p>{{shift.emploee_three}}</p>
-        <p>{{shift.emploee_four}}</p>
-        <p>{{shift.emploee_five}}</p>
+    <div class="days col-sm p-2 border border-left-0 border-top-0 text-truncate ">
+        <h5 class="row align-items-center">
+            <span class="date col-1">{{shift.shift_date}}</span>
+            <small class="col d-sm-none text-center text-muted">Monday</small>
+            <span class="col-1"></span>
+        </h5>
+        {% if shift.emploee_one == '' %}
+            <p class="sr-only">Empty</p>
+        {% else %}
+            <a id="one" class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white"
+            title="{{shift.emploee_one}}">{{shift.emploee_one}}</a>
+        {% endif %}
+        {% if shift.emploee_two == '' %}
+            <p class="sr-only">Empty</p>
+        {% else %}
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white"
+        title="{{shift.emploee_two}}">{{shift.emploee_two}}</a>
+        {% endif %}
+        {% if shift.emploee_three == '' %}
+            <p class="sr-only">Empty</p>
+        {% else %}
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white"
+        title="{{shift.emploee_three}}">{{shift.emploee_three}}</a>
+        {% endif %}
+        {% if shift.emploee_four == '' %}
+            <p class="sr-only">Empty</p>
+        {% else %}
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white"
+        title="{{shift.emploee_four}}">{{shift.emploee_four}}</a>
+        {% endif %}
+        {% if shift.emploee_five == '' %}
+            <p class="sr-only">Empty</p>
+        {% else %}
+            <a class="event d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white"
+        title="{{shift.emploee_five}}">{{shift.emploee_five}}</a>
+        {% endif %}
+    </div>
+    {% if shift.shift_date % 7 == 0 %}
+    <div class="w-100"></div>
+    {% endif %}
     {% endfor %}
-</body>
-</html>
+    
+    {% for off in range(5) %}
+    <div
+        class="days col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-off text-muted">
+        <h5 class="row align-items-center">
+            <span class="date col-1">{{loop.index}}</span>
+            <small class="col d-sm-none text-center text-muted">Tuesday</small>
+            <span class="col-1"></span>
+        </h5>
+        <p class="d-sm-none">No events</p>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700');
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #4d4d4d;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #ffffff;
+}
+
+.bg-calendar-header {
+    background-color: #007bff;
+}
+
+.right-area {
+    margin-top: 55px;
+}
+
+.left-area {
+    background-color: #007bff;
+}
+
+.days {
+    min-height: 188px;
+}
+
+.bg-off {
+    background-color: #f9f9f9;
+}
+
+.section-app {
+    margin-bottom: 50px;
+}
