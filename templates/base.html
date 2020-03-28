@@ -55,7 +55,7 @@
                 </div>
                 <div class="row no-gutters">
                     <div class="col">
-                        {% block calendar %} {% endblock %}
+                        {% block module %} {% endblock %}
                     </div>
                 </div>
             </div>
@@ -64,11 +64,7 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('#one[class="bg-info"]:not(:has(*))').removeClass('bg-info');
-        })
-    </script>
+    
 </body>
 
 </html>
