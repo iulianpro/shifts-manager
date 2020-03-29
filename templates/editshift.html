@@ -18,7 +18,6 @@
                             </div>
                             <div class="col-md-6">
                                 <select class="form-control" id="date" name="shift_date">
-                                    <option selected></option>
                                     {% for day in calendar %}
                                     {% if day.shift_date == shift.shift_date %}
                                     <option value="{{day.shift_date}}" selected>{{day.shift_date}}</option>
