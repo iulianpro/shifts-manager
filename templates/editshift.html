@@ -1,7 +1,7 @@
 {% extends 'base.html'%} {% block module %}
 <div class="inner-area">
     <div class="form-area">
-        <form action="{{ url_for('update_shift', shift_id=shift._id) }}" method="POST">
+        <form action="{{ url_for('update_shift', shift_id=shift._id) }}" method="POST" id="update-form">
             <div class="form-group">
                 <div class="form-row">
                     <div class="col-md-6">
@@ -83,6 +83,8 @@
                     </div>
                 </div>
                 <button class="btn btn-light" name="action" type="submit">Add Shift</button>
+                <div id="loading" class="d-none"><img src="{{url_for('static', filename='img/loading.gif')}}"
+                        alt="loading" /></div>
             </div>
         </form>
     </div>

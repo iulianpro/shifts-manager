@@ -55,6 +55,10 @@ body {
     padding: 30px;
 }
 
+#loading {
+    margin-top: 20px;
+} 
+
 @media (min-width: 576px) {
     .left-menu {
         margin-top: 75px;
