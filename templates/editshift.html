@@ -8,13 +8,11 @@
                         <h6 class="mb-0">Select work day: </h6>
                     </div>
                     <div class="col-md-6">
-                        <select class="form-control" id="date" name="shift_date">
                             {% for day in calendar %}
                             {% if day.shift_date == shift.shift_date %}
-                            <option value="{{day.shift_date}}" selected>{{day.shift_date}}</option>
+                            <input class="form-control" id="date" name="shift_date" type="text" value="{{day.shift_date}}" readonly>
                             {% endif %}
                             {% endfor %}
-                        </select>
                     </div>
                 </div>
                 <div class="form-row">
