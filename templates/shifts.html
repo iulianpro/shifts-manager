@@ -18,7 +18,7 @@
             <div class="col-9 d-flex justify-content-end mb-2">
                 <a href="{{url_for('edit_shift', shift_id=shift._id)}}" type="button"
                     class="btn bttn btn-warning btn-sm" title="Edit shift">E</a>
-                <a href="#" type="button" class="btn bttn btn-danger btn-sm ml-1 text-white" title="Delete shift">D</a>
+                <a href="{{url_for('delete_shift', shift_id=shift._id)}}" type="button" class="btn bttn btn-danger btn-sm ml-1 text-white" title="Delete shift">D</a>
             </div>
         </div>
         {% if shift.emploee_one == '' %}
