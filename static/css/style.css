@@ -38,11 +38,25 @@ body {
     margin-right: 20px;
 }
 
+.day-number {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.bttn {
+    border-radius: 30%;
+    opacity: 75%;
+}
+
 @media (min-width: 576px) {
     .left-menu {
         margin-top: 75px;
         margin-left: 120px;
         margin-right: 120px;
+    }
+
+    .bttn {
+        border-radius: 50%;
     }
 }
 
@@ -55,5 +69,9 @@ body {
 
     .right-area {
         margin-top: 55px;
+    }
+
+    .bttn {
+        border-radius: 30%;
     }
 }
