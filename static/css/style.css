@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700');
-
 body {
     font-family: "Poppins", sans-serif;
     color: #4d4d4d;
@@ -48,13 +47,20 @@ body {
     opacity: 75%;
 }
 
+.inner-area {
+    background-color: #2d90fa;
+}
+
+.form-area {
+    padding: 30px;
+}
+
 @media (min-width: 576px) {
     .left-menu {
         margin-top: 75px;
         margin-left: 120px;
         margin-right: 120px;
     }
-
     .bttn {
         border-radius: 50%;
     }
@@ -66,11 +72,9 @@ body {
         margin-left: 20px;
         margin-right: 20px;
     }
-
     .right-area {
         margin-top: 55px;
     }
-
     .bttn {
         border-radius: 30%;
     }
