@@ -62,6 +62,17 @@ def delete_shift(shift_id):
     return redirect(url_for('get_shifts'))
 
 
+@app.route('/delete_one/<shift_id>/<emploee_one>')
+def delete_one(shift_id, emploee_one):
+    shifts = mongo.db.shifts
+    shifts.update({'_id': ObjectId(shift_id)},
+                  {
+        '$set': {
+            'emploee_one': ''
+        }})
+    return redirect(url_for('get_shifts'))
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),

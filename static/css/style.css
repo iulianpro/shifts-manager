@@ -55,6 +55,21 @@ body {
     padding: 30px;
 }
 
+.emploee {
+    position: relative;
+}
+
+.delete-emploee {
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    margin-top: -24px;
+    margin-left: 6px;
+    background-color: red;
+    border-radius: 50%;
+    opacity: 85%;
+}
+
 #loading {
     margin-top: 20px;
 } 
