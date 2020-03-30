@@ -73,7 +73,7 @@ def delete_one(shift_id, emploee_one):
     return redirect(url_for('get_shifts'))
 
 
-@app.route('/delete_one/<shift_id>/<emploee_two>')
+@app.route('/delete_two/<shift_id>/<emploee_two>')
 def delete_two(shift_id, emploee_two):
     shifts = mongo.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
@@ -84,7 +84,7 @@ def delete_two(shift_id, emploee_two):
     return redirect(url_for('get_shifts'))
 
 
-@app.route('/delete_one/<shift_id>/<emploee_three>')
+@app.route('/delete_three/<shift_id>/<emploee_three>')
 def delete_three(shift_id, emploee_three):
     shifts = mongo.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
@@ -95,7 +95,7 @@ def delete_three(shift_id, emploee_three):
     return redirect(url_for('get_shifts'))
 
 
-@app.route('/delete_one/<shift_id>/<emploee_four>')
+@app.route('/delete_four/<shift_id>/<emploee_four>')
 def delete_four(shift_id, emploee_four):
     shifts = mongo.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
@@ -106,7 +106,7 @@ def delete_four(shift_id, emploee_four):
     return redirect(url_for('get_shifts'))
 
 
-@app.route('/delete_one/<shift_id>/<emploee_five>')
+@app.route('/delete_five/<shift_id>/<emploee_five>')
 def delete_five(shift_id, emploee_five):
     shifts = mongo.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
