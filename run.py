@@ -15,8 +15,8 @@ app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
 mongo = PyMongo(app)
 
 
-@app.route("/")
-@app.route("/get_shifts")
+@app.route('/')
+@app.route('/get_shifts')
 def get_shifts():
     return render_template("shifts.html", shifts=mongo.db.shifts.find())
 
