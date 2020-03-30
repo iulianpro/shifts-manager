@@ -73,6 +73,50 @@ def delete_one(shift_id, emploee_one):
     return redirect(url_for('get_shifts'))
 
 
+@app.route('/delete_one/<shift_id>/<emploee_two>')
+def delete_two(shift_id, emploee_two):
+    shifts = mongo.db.shifts
+    shifts.update({'_id': ObjectId(shift_id)},
+                  {
+        '$set': {
+            'emploee_two': ''
+        }})
+    return redirect(url_for('get_shifts'))
+
+
+@app.route('/delete_one/<shift_id>/<emploee_three>')
+def delete_three(shift_id, emploee_three):
+    shifts = mongo.db.shifts
+    shifts.update({'_id': ObjectId(shift_id)},
+                  {
+        '$set': {
+            'emploee_three': ''
+        }})
+    return redirect(url_for('get_shifts'))
+
+
+@app.route('/delete_one/<shift_id>/<emploee_four>')
+def delete_four(shift_id, emploee_four):
+    shifts = mongo.db.shifts
+    shifts.update({'_id': ObjectId(shift_id)},
+                  {
+        '$set': {
+            'emploee_four': ''
+        }})
+    return redirect(url_for('get_shifts'))
+
+
+@app.route('/delete_one/<shift_id>/<emploee_five>')
+def delete_five(shift_id, emploee_five):
+    shifts = mongo.db.shifts
+    shifts.update({'_id': ObjectId(shift_id)},
+                  {
+        '$set': {
+            'emploee_five': ''
+        }})
+    return redirect(url_for('get_shifts'))
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),

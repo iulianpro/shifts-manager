@@ -33,26 +33,34 @@
         {% if shift.emploee_two == '' %}
         <p class="sr-only">Empty</p>
         {% else %}
-        <a class="d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white"
-            title="{{shift.emploee_two}}">{{shift.emploee_two}}</a>
+        <a class="d-block p-1 pl-4 pr-2 mb-1 rounded text-truncate small bg-info text-white emploee"
+            title="{{shift.emploee_two}}">{{shift.emploee_two}}</a><a class="delete-emploee"
+            title="Delete {{shift.emploee_two}}"
+            href="{{url_for('delete_two', shift_id=shift._id, emploee_two=shift.emploee_two)}}"></a>
         {% endif %}
         {% if shift.emploee_three == '' %}
         <p class="sr-only">Empty</p>
         {% else %}
-        <a class="d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white"
-            title="{{shift.emploee_three}}">{{shift.emploee_three}}</a>
+        <a class="d-block p-1 pl-4 pr-2 mb-1 rounded text-truncate small bg-info text-white emploee"
+            title="{{shift.emploee_three}}">{{shift.emploee_three}}</a><a class="delete-emploee"
+            title="Delete {{shift.emploee_three}}"
+            href="{{url_for('delete_three', shift_id=shift._id, emploee_three=shift.emploee_three)}}"></a>
         {% endif %}
         {% if shift.emploee_four == '' %}
         <p class="sr-only">Empty</p>
         {% else %}
-        <a class="d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white"
-            title="{{shift.emploee_four}}">{{shift.emploee_four}}</a>
+        <a class="d-block p-1 pl-4 pr-2 mb-1 rounded text-truncate small bg-info text-white emploee"
+            title="{{shift.emploee_four}}">{{shift.emploee_four}}</a><a class="delete-emploee"
+            title="Delete {{shift.emploee_four}}"
+            href="{{url_for('delete_four', shift_id=shift._id, emploee_four=shift.emploee_four)}}"></a>
         {% endif %}
         {% if shift.emploee_five == '' %}
         <p class="sr-only">Empty</p>
         {% else %}
-        <a class="d-block p-1 pl-2 pr-2 mb-1 rounded text-truncate small bg-info text-white"
-            title="{{shift.emploee_five}}">{{shift.emploee_five}}</a>
+        <a class="d-block p-1 pl-4 pr-2 mb-1 rounded text-truncate small bg-info text-white emploee"
+            title="{{shift.emploee_five}}">{{shift.emploee_five}}</a><a class="delete-emploee"
+            title="Delete {{shift.emploee_five}}"
+            href="{{url_for('delete_five', shift_id=shift._id, emploee_five=shift.emploee_five)}}"></a>
         {% endif %}
     </div>
     {% if shift.shift_date % 7 == 0 %}
