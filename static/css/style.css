@@ -15,12 +15,11 @@ body {
     margin-top: 0;
 }
 
-.left-area,
-.ext-area {
+.left-area, .extl-area, .extr-area {
     background-color: #007bff;
 }
 
-.ext-area {
+.extl-area, .extr-area {
     width: 15px;
 }
 
@@ -77,7 +76,7 @@ body {
 
 #loading {
     margin-top: 20px;
-} 
+}
 
 @media (min-width: 576px) {
     .left-menu {
@@ -98,6 +97,9 @@ body {
     }
     .right-area {
         margin-top: 55px;
+    }
+    .extl-area {
+        width: 0px;
     }
     .bttn {
         border-radius: 30%;
