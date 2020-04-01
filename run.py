@@ -7,34 +7,34 @@ if path.exists("env.py"):
     import env
 
 
-app = Flask(__name__)
+APP = Flask(__name__)
 
-app.config["MONGO_DBNAME"] = os.getenv('MONGO_DBNAME')
-app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
+APP.config["MONGO_DBNAME"] = os.getenv('MONGO_DBNAME')
+APP.config["MONGO_URI"] = os.getenv('MONGO_URI')
 
-mongo = PyMongo(app)
+MONGO = PyMongo(APP)
 
 
-@app.route('/')
-@app.route('/get_shifts')
+@APP.route('/')
+@APP.route('/get_shifts')
 def get_shifts():
-    return render_template("shifts.html", shifts=mongo.db.shifts.find())
+    return render_template("shifts.html", shifts=MONGO.db.shifts.find())
 
 
-@app.route('/edit_shift/<shift_id>')
+@APP.route('/edit_shift/<shift_id>')
 def edit_shift(shift_id):
-    this_shift = mongo.db.shifts.find_one({"_id": ObjectId(shift_id)})
-    emploee_one = mongo.db.emploees
-    emploee_two = mongo.db.emploees
-    emploee_three = mongo.db.emploees
-    emploee_four = mongo.db.emploees
-    emploee_five = mongo.db.emploees
-    return render_template('editshift.html', calendar=mongo.db.dates.find(), shift=this_shift, emploee_1=emploee_one.find(), emploee_2=emploee_two.find(), emploee_3=emploee_three.find(), emploee_4=emploee_four.find(), emploee_5=emploee_five.find())
+    this_shift = MONGO.db.shifts.find_one({"_id": ObjectId(shift_id)})
+    emploee_one = MONGO.db.emploees
+    emploee_two = MONGO.db.emploees
+    emploee_three = MONGO.db.emploees
+    emploee_four = MONGO.db.emploees
+    emploee_five = MONGO.db.emploees
+    return render_template('editshift.html', calendar=MONGO.db.dates.find(), shift=this_shift, emploee_1=emploee_one.find(), emploee_2=emploee_two.find(), emploee_3=emploee_three.find(), emploee_4=emploee_four.find(), emploee_5=emploee_five.find())
 
 
-@app.route('/update_shift/<shift_id>', methods=["POST"])
+@APP.route('/update_shift/<shift_id>', methods=["POST"])
 def update_shift(shift_id):
-    shifts = mongo.db.shifts
+    shifts = MONGO.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
                   {
         'shift_date': request.form.get('shift_date', type=int),
@@ -47,9 +47,9 @@ def update_shift(shift_id):
     return redirect(url_for('get_shifts'))
 
 
-@app.route('/delete_shift/<shift_id>')
+@APP.route('/delete_shift/<shift_id>')
 def delete_shift(shift_id):
-    shifts = mongo.db.shifts
+    shifts = MONGO.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
                   {
         '$set': {
@@ -62,9 +62,9 @@ def delete_shift(shift_id):
     return redirect(url_for('get_shifts'))
 
 
-@app.route('/delete_one/<shift_id>/<emploee_one>')
+@APP.route('/delete_one/<shift_id>/<emploee_one>')
 def delete_one(shift_id, emploee_one):
-    shifts = mongo.db.shifts
+    shifts = MONGO.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
                   {
         '$set': {
@@ -73,9 +73,9 @@ def delete_one(shift_id, emploee_one):
     return redirect(url_for('get_shifts'))
 
 
-@app.route('/delete_two/<shift_id>/<emploee_two>')
+@APP.route('/delete_two/<shift_id>/<emploee_two>')
 def delete_two(shift_id, emploee_two):
-    shifts = mongo.db.shifts
+    shifts = MONGO.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
                   {
         '$set': {
@@ -84,9 +84,9 @@ def delete_two(shift_id, emploee_two):
     return redirect(url_for('get_shifts'))
 
 
-@app.route('/delete_three/<shift_id>/<emploee_three>')
+@APP.route('/delete_three/<shift_id>/<emploee_three>')
 def delete_three(shift_id, emploee_three):
-    shifts = mongo.db.shifts
+    shifts = MONGO.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
                   {
         '$set': {
@@ -95,9 +95,9 @@ def delete_three(shift_id, emploee_three):
     return redirect(url_for('get_shifts'))
 
 
-@app.route('/delete_four/<shift_id>/<emploee_four>')
+@APP.route('/delete_four/<shift_id>/<emploee_four>')
 def delete_four(shift_id, emploee_four):
-    shifts = mongo.db.shifts
+    shifts = MONGO.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
                   {
         '$set': {
@@ -106,9 +106,9 @@ def delete_four(shift_id, emploee_four):
     return redirect(url_for('get_shifts'))
 
 
-@app.route('/delete_five/<shift_id>/<emploee_five>')
+@APP.route('/delete_five/<shift_id>/<emploee_five>')
 def delete_five(shift_id, emploee_five):
-    shifts = mongo.db.shifts
+    shifts = MONGO.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
                   {
         '$set': {
@@ -118,6 +118,6 @@ def delete_five(shift_id, emploee_five):
 
 
 if __name__ == '__main__':
-    app.run(host=os.environ.get('IP'),
+    APP.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
             debug=True)
