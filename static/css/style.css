@@ -15,8 +15,13 @@ body {
     margin-top: 0;
 }
 
-.left-area {
+.left-area,
+.ext-area {
     background-color: #007bff;
+}
+
+.ext-area {
+    width: 15px;
 }
 
 .days {
