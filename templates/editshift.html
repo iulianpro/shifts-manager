@@ -1,4 +1,4 @@
-{% extends 'base.html'%} {% block module %}
+{% extends 'layout/base.html'%} {% block module %}
 <div class="inner-area">
     <div class="form-area">
         <form action="{{ url_for('update_shift', shift_id=shift._id) }}" method="POST" id="update-form">
