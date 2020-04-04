@@ -55,10 +55,6 @@ body {
     background-color: #2d90fa;
 }
 
-.form-area {
-    padding: 30px;
-}
-
 .emploee {
     position: relative;
 }
@@ -74,6 +70,14 @@ body {
     opacity: 85%;
 }
 
+.form-area {
+    padding: 10px;
+}
+
+.form-label {
+    text-align: center;
+}
+
 #loading {
     margin-top: 20px;
 }
@@ -86,6 +90,18 @@ body {
     }
     .bttn {
         border-radius: 50%;
+    }
+    .form-area {
+        padding: 10px 100px;
+    }
+}
+
+@media (min-width: 768px) {
+    .form-area {
+        padding: 30px 100px;
+    }
+    .form-label {
+        text-align: left;
     }
 }
 
@@ -103,5 +119,14 @@ body {
     }
     .bttn {
         border-radius: 30%;
+    }
+    .form-area {
+        padding: 30px 200px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .form-area {
+        padding: 30px 300px;
     }
 }

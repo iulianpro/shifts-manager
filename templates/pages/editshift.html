@@ -5,22 +5,23 @@
             <div class="form-group">
                 <div class="form-row">
                     <div class="col-md-6">
-                        <h6 class="mb-0">Select work day: </h6>
+                        <h6 class="mt-3 text-white form-label">Day updating: </h6>
                     </div>
-                    <div class="col-md-6">
-                            {% for day in calendar %}
-                            {% if day.shift_date == shift.shift_date %}
-                            <input class="form-control" id="date" name="shift_date" type="text" value="{{day.shift_date}}" readonly>
-                            {% endif %}
-                            {% endfor %}
+                    <div class="col-md-6 mt-2">
+                        {% for day in calendar %}
+                        {% if day.shift_date == shift.shift_date %}
+                        <input class="form-control text-center" id="date" name="shift_date" type="text" value="{{day.shift_date}}"
+                            readonly>
+                        {% endif %}
+                        {% endfor %}
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-md-6">
-                        <h6 class="mb-0">Select emploee one: </h6>
+                        <h6 class="mt-3 text-white form-label">Edit emploee one: </h6>
                     </div>
                     <div class="col-md-6">
-                        <select class="form-control" id="emploee_one" name="emploee_one">
+                        <select class="mt-2 form-control" id="emploee_one" name="emploee_one">
                             <option value="{{shift.emploee_one}}" selected>{{shift.emploee_one}}</option>
                             {% for empl in emploee_1 %}
                             <option value="{{empl.emploee_name}}">{{empl.emploee_name}}</option>
@@ -30,10 +31,10 @@
                 </div>
                 <div class="form-row">
                     <div class="col-md-6">
-                        <h6 class="mb-0">Select emploee one: </h6>
+                        <h6 class="mt-3 text-white form-label">Edit emploee two: </h6>
                     </div>
                     <div class="col-md-6">
-                        <select class="form-control" id="emploee_two" name="emploee_two">
+                        <select class="mt-2 form-control" id="emploee_two" name="emploee_two">
                             <option value="{{shift.emploee_two}}" selected>{{shift.emploee_two}}</option>
                             {% for empl in emploee_2 %}
                             <option value="{{empl.emploee_name}}">{{empl.emploee_name}}</option>
@@ -43,10 +44,10 @@
                 </div>
                 <div class="form-row">
                     <div class="col-md-6">
-                        <h6 class="mb-0">Select emploee one: </h6>
+                        <h6 class="mt-3 text-white form-label">Select emploee three: </h6>
                     </div>
                     <div class="col-md-6">
-                        <select class="form-control" id="emploee_three" name="emploee_three">
+                        <select class="mt-2 form-control" id="emploee_three" name="emploee_three">
                             <option value="{{shift.emploee_three}}" selected>{{shift.emploee_three}}</option>
                             {% for empl in emploee_3 %}
                             <option value="{{empl.emploee_name}}">{{empl.emploee_name}}</option>
@@ -56,10 +57,10 @@
                 </div>
                 <div class="form-row">
                     <div class="col-md-6">
-                        <h6 class="mb-0">Select emploee one: </h6>
+                        <h6 class="mt-3 text-white form-label">Edit emploee four: </h6>
                     </div>
                     <div class="col-md-6">
-                        <select class="form-control" id="emploee_four" name="emploee_four">
+                        <select class="mt-2 form-control" id="emploee_four" name="emploee_four">
                             <option value="{{shift.emploee_four}}" selected>{{shift.emploee_four}}</option>
                             {% for empl in emploee_4 %}
                             <option value="{{empl.emploee_name}}">{{empl.emploee_name}}</option>
@@ -69,10 +70,10 @@
                 </div>
                 <div class="form-row">
                     <div class="col-md-6">
-                        <h6 class="mb-0">Select emploee one: </h6>
+                        <h6 class="mt-3 text-white form-label">Edit emploee five: </h6>
                     </div>
                     <div class="col-md-6">
-                        <select class="form-control" id="emploee_five" name="emploee_five">
+                        <select class="mt-2 form-control" id="emploee_five" name="emploee_five">
                             <option value="{{shift.emploee_five}}" selected>{{shift.emploee_five}}</option>
                             {% for empl in emploee_5 %}
                             <option value="{{empl.emploee_name}}">{{empl.emploee_name}}</option>
@@ -80,9 +81,14 @@
                         </select>
                     </div>
                 </div>
-                <button class="btn btn-light" name="action" type="submit">Add Shift</button>
-                <div id="loading" class="d-none"><img src="{{url_for('static', filename='img/loading.gif')}}"
-                        alt="loading" /></div>
+                <div class="form-row mt-4">
+                    <div class="col text-center">
+                        <button class="btn btn-light" name="action" type="submit">Update Shift</button>
+                        <div id="loading" class="d-none"><img src="{{url_for('static', filename='img/loading.gif')}}"
+                                alt="loading" /></div>
+                    </div>
+
+                </div>
             </div>
         </form>
     </div>
