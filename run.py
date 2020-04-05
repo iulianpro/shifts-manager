@@ -117,6 +117,12 @@ def delete_five(shift_id, emploee_five):
     return redirect(url_for('get_shifts'))
 
 
+@APP.route('/get_emploees')
+def get_emploees():
+    all_emploees = MONGO.db.emploees.find()
+    return render_template('pages/emploees.html', emploees=all_emploees)
+
+
 if __name__ == '__main__':
     APP.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
