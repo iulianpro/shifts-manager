@@ -123,6 +123,13 @@ def get_emploees():
     return render_template('pages/emploees.html', emploees=all_emploees)
 
 
+@APP.route('/insert_emploee', methods=['POST'])
+def insert_emploee():
+    emploees = MONGO.db.emploees
+    emploees.insert_one(request.form.to_dict())
+    return redirect(url_for('get_emploees'))
+
+
 if __name__ == '__main__':
     APP.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),

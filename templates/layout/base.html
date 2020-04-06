@@ -22,10 +22,11 @@
                     <a type="button" class="btn btn-light btn-lg btn-block" href="{{url_for('get_shifts')}}">
                         <h6 class="m-0">View Calendar</h6>
                     </a>
-                    <a type="button" class="btn btn-light btn-lg btn-block" href="">
+                    <a type="button" class="btn btn-light btn-lg btn-block" data-toggle="modal" href="#add_emploee">
                         <h6 class="m-0">Add Emploee</h6>
                     </a>
-                    <a type="button" class="btn btn-light btn-lg btn-block" href="{{url_for('get_emploees')}}">
+                    {% include 'components/cardemploee.html' %}
+                    <a type="button" class="btn btn-light btn-lg btn-block mt-2" href="{{url_for('get_emploees')}}">
                         <h6 class="m-0">Manage Emploee</h6>
                     </a>
                 </div>
@@ -50,7 +51,7 @@
     <footer>
         {% include 'layout/footer.html' %}
     </footer>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
