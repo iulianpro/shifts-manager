@@ -1,32 +1,26 @@
-<div class="row no-gutters">
-    <div class="col">
-
-        <div class="row">
-            <div class="col-4">
-                <img src="" alt="">
-            </div>
-            <div class="col-8">
-                <h6>Date Employment: {{emploee.date_employment}}</h6>
-                <h6>Gender: {{emploee.gender}}</h6>
-                <h6>Age: {{emploee.age}}</h6>
-                <h6>Salary: {{emploee.salary}}</h6>
-                <h6>Email: {{emploee.email}}</h6>
-                <h6>Phone: {{emploee.phone}}</h6>
-            </div>
+<div class="row">
+    <div class="col-5">
+        <div class="emploee-image">
+            <img class="image" src="{{url_for('static', filename='img/male.png')}}" alt="{{emploee.emploee_name}}">
         </div>
+    </div>
+    <div class="col-7">
+        <h6 class="font-italic">Hired: {{emploee.date_employment}}</h6>
+        <h6 class="font-italic">Gender: {{emploee.gender}}</h6>
+        <h6 class="font-italic">Age: {{emploee.age}}</h6>
+        <h6 class="font-italic">Salary: £{{emploee.salary}}</h6>
+        <h6 class="font-italic"><i class="fas fa-envelope"></i> {{emploee.email}}</h6>
+        <h6 class="font-italic"><i class="fas fa-phone-square-alt"></i> {{emploee.phone}}</h6>
+    </div>
+</div>
 
-        <div class="row">
-            <div class="col-8">
-                <h6>{{emploee.emploee_name}}</h6>
-                <h6>{{emploee.emploee_surname}}</h6>
-            </div>
-            <div class="col-4 d-flex justify-content-end">
-                <a href="" type="button" class="btn bttn btn-warning btn-sm"
-                    title="Edit {{emploee.emploee_name}}">Edit</a>
-                <a href="" type="button" class="btn bttn btn-danger btn-sm ml-1 text-white"
-                    title="Delete {{emploee.emploee_name}}">Delete</a>
-            </div>
-        </div>
-
+<div class="row align-items-center mt-2">
+    <div class="col-7">
+        <h6 class="font-weight-bold ml-2 mb-0">{{emploee.emploee_name}} {{emploee.emploee_surname}}</h6>
+    </div>
+    <div class="col-5 d-flex justify-content-end">
+        <a href="" type="button" class="btn bttn btn-warning btn-sm" title="Edit {{emploee.emploee_name}}">Edit</a>
+        <a href="" type="button" class="btn bttn btn-danger btn-sm ml-1 text-white"
+            title="Delete {{emploee.emploee_name}}">Delete</a>
     </div>
 </div>
