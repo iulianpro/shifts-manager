@@ -146,6 +146,12 @@ def update_emploee(emploee_id):
     return redirect(url_for('get_emploees'))
 
 
+@APP.route('/delete_emploee/<emploee_id>')
+def delete_emploee(emploee_id):
+    MONGO.db.emploees.remove({'_id': ObjectId(emploee_id)})
+    return redirect(url_for('get_emploees'))
+
+
 if __name__ == '__main__':
     APP.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
