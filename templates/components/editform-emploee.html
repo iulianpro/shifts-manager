@@ -1,0 +1,57 @@
+<div class="modal fade" id="m-{{emploee._id}}" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form action="{{url_for('update_emploee', emploee_id=emploee._id)}}" method="POST">
+                    <div class="form-row mt-3">
+                        <div class="col">
+                            <input type="text" class="form-control" name="emploee_name" placeholder="First name"
+                                value="{{emploee.emploee_name}}">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" name="emploee_surname" placeholder="Last name"
+                                value="{{emploee.emploee_surname}}">
+                        </div>
+                    </div>
+                    <div class="form-row mt-3">
+                        <div class="col">
+                            <select class="form-control" name="gender" id="gender" placeholder="Gender">
+                                {% if emploee.gender == 'M' %}
+                                <option selected>M</option>
+                                {% else %}
+                                <option>F</option>
+                                {% endif %}
+                            </select>
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" name="age" min="18" max="75" placeholder="Age"
+                                value="{{emploee.age}}">
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" name="salary" placeholder="Salary"
+                                value="{{emploee.salary}}">
+                        </div>
+                    </div>
+                    <div class="form-row mt-3">
+                        <div class="col">
+                            <input type="email" class="form-control" name="email" placeholder="Email"
+                                value="{{emploee.email}}">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" name="phone" minlength="11" maxlength="11"
+                                placeholder="Phone" value="{{emploee.phone}}">
+                        </div>
+                    </div>
+                    <div class="form-row mt-3">
+                        <div class="col d-flex justify-content-end">
+                            <button type="submit" class="btn btn-warning btn-sm" name="action"
+                                title="Add Emaployee">UPDATE</button>
+                            <button type="button" class="btn btn-danger btn-sm ml-2" data-dismiss="modal"
+                                title="Cancel action">CANCEL</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

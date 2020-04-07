@@ -130,6 +130,22 @@ def insert_emploee():
     return redirect(url_for('get_emploees'))
 
 
+@APP.route('/update_emploee/<emploee_id>', methods=["POST"])
+def update_emploee(emploee_id):
+    emploees = MONGO.db.emploees
+    emploees.update({'_id': ObjectId(emploee_id)},
+                  {
+        'emploee_name': request.form.get('emploee_name'),
+        'emploee_surname': request.form.get('emploee_surname'),
+        'gender': request.form.get('gender'),
+        'age': request.form.get('age'),
+        'salary': request.form.get('salary'),
+        'email': request.form.get('email'),
+        'phone': request.form.get('phone')
+    })
+    return redirect(url_for('get_emploees'))
+
+
 if __name__ == '__main__':
     APP.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')),
