@@ -16,11 +16,10 @@
                     <div class="form-row mt-3">
                         <div class="col">
                             <select class="form-control" name="gender" id="gender" placeholder="Gender">
-                                {% if emploee.gender == 'M' %}
-                                <option selected>M</option>
-                                {% else %}
+                                <option selected>{{emploee.gender}}</option>
                                 <option>F</option>
-                                {% endif %}
+                                <option>M</option>
+                                
                             </select>
                         </div>
                         <div class="col">
