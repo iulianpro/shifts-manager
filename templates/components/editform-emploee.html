@@ -5,6 +5,12 @@
                 <form action="{{url_for('update_emploee', emploee_id=emploee._id)}}" method="POST">
                     <div class="form-row mt-3">
                         <div class="col">
+                            <h6 class="text-white text-bold text-center">You are updating {{emploee.emploee_name}}
+                                {{emploee.emploee_surname}} employee data</h6>
+                        </div>
+                    </div>
+                    <div class="form-row mt-3">
+                        <div class="col">
                             <input type="text" class="form-control" name="emploee_name" placeholder="First name"
                                 value="{{emploee.emploee_name}}">
                         </div>
@@ -16,10 +22,10 @@
                     <div class="form-row mt-3">
                         <div class="col">
                             <select class="form-control" name="gender" id="gender" placeholder="Gender">
-                                <option selected>{{emploee.gender}}</option>
+                                <option selected disabled>{{emploee.gender}}</option>
                                 <option>F</option>
                                 <option>M</option>
-                                
+
                             </select>
                         </div>
                         <div class="col">
@@ -44,7 +50,7 @@
                     <div class="form-row mt-3">
                         <div class="col d-flex justify-content-end">
                             <button type="submit" class="btn btn-warning btn-sm" name="action"
-                                title="Add Emaployee">UPDATE</button>
+                                title="UPDATE Emaployee">UPDATE</button>
                             <button type="button" class="btn btn-danger btn-sm ml-2" data-dismiss="modal"
                                 title="Cancel action">CANCEL</button>
                         </div>
