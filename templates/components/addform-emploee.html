@@ -5,6 +5,11 @@
                 <form action="{{url_for('insert_emploee')}}" method="POST">
                     <div class="form-row mt-3">
                         <div class="col">
+                            <h6 class="text-white text-bold text-center">Add new employee</h6>
+                        </div>
+                    </div>
+                    <div class="form-row mt-3">
+                        <div class="col">
                             <input type="text" class="form-control" name="emploee_name" placeholder="First name">
                         </div>
                         <div class="col">
@@ -37,7 +42,7 @@
                     <div class="form-row mt-3">
                         <div class="col d-flex justify-content-end">
                             <button type="submit" class="btn btn-warning btn-sm" name="action"
-                                title="Add Emaployee">ADD</button>
+                                title="ADD Emaployee">ADD</button>
                             <button type="button" class="btn btn-danger btn-sm ml-2" data-dismiss="modal"
                                 title="Cancel action">CANCEL</button>
                         </div>
