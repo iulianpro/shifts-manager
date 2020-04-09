@@ -52,7 +52,7 @@ body {
 }
 
 .inner-area {
-    background-color: #2d90fa;
+    background-color: #007bff;
 }
 
 .emploee {
@@ -105,6 +105,15 @@ body {
 
 .emploee-name {
     font-size: 18px;
+}
+
+.modal-dialog {
+    margin-top: 15%;
+}
+
+.modal-content {
+    background-color: #007bff;
+    opacity: 90%;
 }
 
 @media (min-width: 576px) {
