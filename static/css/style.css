@@ -7,16 +7,12 @@ body {
     background-color: #ffffff;
 }
 
-.bg-calendar-header {
+.bg-calendar-header, .inner-area, .left-area, .extl-area, .extr-area {
     background-color: #007bff;
 }
 
 .right-area {
     margin-top: 0;
-}
-
-.left-area, .extl-area, .extr-area {
-    background-color: #007bff;
 }
 
 .extl-area, .extr-area {
@@ -49,10 +45,6 @@ body {
 .bttn {
     border-radius: 30%;
     opacity: 75%;
-}
-
-.inner-area {
-    background-color: #007bff;
 }
 
 .emploee {
