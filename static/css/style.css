@@ -15,6 +15,10 @@ body {
     margin-top: 0;
 }
 
+.right-area h4 {
+    font-weight: 300;
+}
+
 .extl-area, .extr-area {
     width: 15px;
 }
@@ -35,6 +39,10 @@ body {
     margin-top: 75px;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+.left-menu a h6 {
+    font-weight: 300;
 }
 
 .day-number {
