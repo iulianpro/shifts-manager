@@ -125,7 +125,7 @@ body {
 .bg-footer {
     background-color: #007bff;
     color: #f9f9f9;
-    padding: 30px 20px;
+    padding: 20px 0;
 }
 
 ul .list-inline {
@@ -158,10 +158,6 @@ hr {
     .form-area {
         padding: 10px 100px;
     }
-    hr {
-        margin-left: 75px;
-        margin-right: 75px;
-    }
 }
 
 @media (min-width: 768px) {
@@ -191,18 +187,10 @@ hr {
     .form-area {
         padding: 30px 200px;
     }
-    hr {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
 }
 
 @media (min-width: 1200px) {
     .form-area {
         padding: 30px 300px;
-    }
-    hr {
-        margin-left: 150px;
-        margin-right: 150px;
     }
 }
