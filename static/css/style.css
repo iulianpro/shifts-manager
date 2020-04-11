@@ -82,6 +82,12 @@ body {
     margin-top: 20px;
 }
 
+.loading-img {
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+}
+
 .card-area {
     background-color: #f3f3f3;
     margin: 10px;
