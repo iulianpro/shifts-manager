@@ -149,6 +149,7 @@ li h6 i {
 hr {
     padding-bottom: 20px;
     border: 0;
+    margin-bottom: 0;
     border-top: 1px solid #f9f9f9;
 }
 
