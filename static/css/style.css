@@ -132,6 +132,10 @@ ul .list-inline {
     margin-bottom: 0;
 }
 
+.list-inline {
+    margin: 0 20px;
+}
+
 li h6 {
     font-weight: 200;
 }
