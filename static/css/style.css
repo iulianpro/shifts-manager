@@ -17,6 +17,8 @@ body {
 
 .right-area h4 {
     font-weight: 300;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .extl-area, .extr-area {
