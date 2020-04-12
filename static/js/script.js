@@ -25,10 +25,7 @@ $(document).ready(function () {
                     $.confirm({
                         icon: 'fa fa-spinner fa-spin',
                         draggable: false,
-                        defaultButtons: false,
                         title: false,
-                        smoothContent: false,
-                        content: false,
                         buttons: {
                             yes: {
                                 isHidden: true
@@ -57,10 +54,7 @@ $(document).ready(function () {
                     $.confirm({
                         icon: 'fa fa-spinner fa-spin',
                         draggable: false,
-                        defaultButtons: false,
                         title: false,
-                        smoothContent: false,
-                        content: false,
                         buttons: {
                             yes: {
                                 isHidden: true
