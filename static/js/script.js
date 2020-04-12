@@ -113,7 +113,7 @@ $(document).ready(function () {
         }
     });
 
-    $("[title|='View calendar'],[title|='Manage employee'],[title^='Erase']").click(function () {
+    $("[title|='View calendar'],[title|='Manage employee'],[title^='Erase'],[title|='UPDATE Employee'],[title|='ADD Emaployee']").click(function () {
         $.confirm({
             animateFromElement: false,
             animation: 'zoom',
