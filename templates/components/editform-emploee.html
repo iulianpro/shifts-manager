@@ -12,16 +12,17 @@
                     <div class="form-row mt-3">
                         <div class="col">
                             <input type="text" class="form-control" name="emploee_name" placeholder="First name"
-                                value="{{emploee.emploee_name}}" required>
+                                aria-label="first name" value="{{emploee.emploee_name}}" required>
                         </div>
                         <div class="col">
                             <input type="text" class="form-control" name="emploee_surname" placeholder="Last name"
-                                value="{{emploee.emploee_surname}}" required>
+                                aria-label="last name" value="{{emploee.emploee_surname}}" required>
                         </div>
                     </div>
                     <div class="form-row mt-3">
                         <div class="col">
-                            <select class="form-control" name="gender" id="gender" placeholder="Gender">
+                            <select class="form-control" name="gender" id="gender" placeholder="Gender"
+                                aria-label="select gender">
                                 <option value="{{emploee.gender}}" selected hidden>{{emploee.gender}}</option>
                                 <option value="F">F</option>
                                 <option value="M">M</option>
@@ -30,29 +31,29 @@
                         </div>
                         <div class="col">
                             <input type="number" class="form-control" name="age" min="18" max="75" placeholder="Age"
-                                value="{{emploee.age}}" required>
+                                aria-label="age" value="{{emploee.age}}" required>
                         </div>
                         <div class="col">
                             <input type="number" class="form-control" name="salary" placeholder="Salary"
-                                value="{{emploee.salary}}" required>
+                                aria-label="salary" value="{{emploee.salary}}" required>
                         </div>
                     </div>
                     <div class="form-row mt-3">
                         <div class="col">
-                            <input type="email" class="form-control" name="email" placeholder="Email"
+                            <input type="email" class="form-control" name="email" placeholder="Email" aria-label="email"
                                 value="{{emploee.email}}" required>
                         </div>
                         <div class="col">
                             <input type="text" class="form-control" name="phone" minlength="11" maxlength="11"
-                                placeholder="Phone" value="{{emploee.phone}}" required>
+                                placeholder="Phone" aria-label="phone" value="{{emploee.phone}}" required>
                         </div>
                     </div>
                     <div class="form-row mt-3">
                         <div class="col d-flex justify-content-end">
-                            <button type="submit" class="btn btn-warning btn-sm" name="action"
-                                title="UPDATE Emaployee">UPDATE</button>
+                            <button type="submit" class="btn btn-warning btn-sm" name="action" title="UPDATE Employee"
+                                aria-label="update employee">UPDATE</button>
                             <button type="button" class="btn btn-danger btn-sm ml-2" data-dismiss="modal"
-                                title="Cancel action">CANCEL</button>
+                                title="Cancel action" aria-label="cancel editing employee">CANCEL</button>
                         </div>
                     </div>
                 </form>

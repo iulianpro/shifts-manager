@@ -11,16 +11,17 @@
                     <div class="form-row mt-3">
                         <div class="col">
                             <input type="text" class="form-control" name="emploee_name" placeholder="First name"
-                                required>
+                                aria-label="firs name" required>
                         </div>
                         <div class="col">
                             <input type="text" class="form-control" name="emploee_surname" placeholder="Last name"
-                                required>
+                                aria-label="last name" required>
                         </div>
                     </div>
                     <div class="form-row mt-3">
                         <div class="col">
-                            <select class="form-control" name="gender" id="gender" placeholder="Gender" required>
+                            <select class="form-control" name="gender" id="gender" placeholder="Gender"
+                                aria-label="gender" required>
                                 <option value="" selected disabled hidden>Gender</option>
                                 <option value="F">F</option>
                                 <option value="M">M</option>
@@ -31,24 +32,26 @@
                                 required>
                         </div>
                         <div class="col">
-                            <input type="number" class="form-control" name="salary" placeholder="Salary" required>
+                            <input type="number" class="form-control" name="salary" placeholder="Salary"
+                                aria-label="salary" required>
                         </div>
                     </div>
                     <div class="form-row mt-3">
                         <div class="col">
-                            <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            <input type="email" class="form-control" name="email" placeholder="Email" aria-label="email"
+                                required>
                         </div>
                         <div class="col">
                             <input type="text" class="form-control" name="phone" minlength="11" maxlength="11"
-                                placeholder="Phone" required>
+                                placeholder="Phone" aria-label="phone" required>
                         </div>
                     </div>
                     <div class="form-row mt-3">
                         <div class="col d-flex justify-content-end">
-                            <button type="submit" class="btn btn-warning btn-sm" name="action"
-                                title="ADD Emaployee">ADD</button>
+                            <button type="submit" class="btn btn-warning btn-sm" name="action" title="ADD Emaployee"
+                                aria-label="add employee">ADD</button>
                             <button type="button" class="btn btn-danger btn-sm ml-2" data-dismiss="modal"
-                                title="Cancel action">CANCEL</button>
+                                title="Cancel action" aria-label="cancel add employee">CANCEL</button>
                         </div>
                     </div>
                 </form>
