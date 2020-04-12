@@ -23,6 +23,8 @@ $(document).ready(function () {
                 btnClass: 'btn-red',
                 action: function () {
                     $.confirm({
+                        boxWidth: '72px',
+                        useBootstrap: false,
                         icon: 'fa fa-spinner fa-spin',
                         draggable: false,
                         title: false,
@@ -52,6 +54,8 @@ $(document).ready(function () {
                 btnClass: 'btn-warning',
                 action: function () {
                     $.confirm({
+                        boxWidth: '72px',
+                        useBootstrap: false,
                         icon: 'fa fa-spinner fa-spin',
                         draggable: false,
                         title: false,
