@@ -156,6 +156,19 @@ hr {
     border-top: 1px solid #f9f9f9;
 }
 
+.jconfirm .jconfirm-box div.jconfirm-title-c {
+    text-align: center;
+    font-size: 18px;
+}
+
+.jconfirm .jconfirm-box div.jconfirm-content-pane {
+    display: none;
+}
+
+.jconfirm .jconfirm-box {
+    padding: 25px 15px 0;
+}
+
 @media (min-width: 576px) {
     .left-menu {
         margin-top: 75px;
