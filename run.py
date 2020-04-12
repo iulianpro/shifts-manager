@@ -16,7 +16,6 @@ MONGO = PyMongo(APP)
 
 
 @APP.route('/')
-@APP.route('/get_shifts')
 def get_shifts():
     return render_template("pages/shifts.html", shifts=MONGO.db.shifts.find())
 
