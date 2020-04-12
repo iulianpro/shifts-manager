@@ -26,9 +26,9 @@
             title="Edit {{emploee.emploee_name}}" aria-label="edit {{emploee.emploee_name}}"><i
                 class="fas fa-user-edit"></i></a>
         {% include 'components/editform-emploee.html' %}
-        <a href="{{url_for('delete_emploee', emploee_id=emploee._id)}}" type="button"
-            onclick="return confirm('Are you sure you want to delete {{emploee.emploee_name}}?');"
-            class="btn btn-danger btn-sm ml-2" title="Delete {{emploee.emploee_name}}"
+        <a href="{{url_for('delete_emploee', emploee_id=emploee._id)}}"
+            data-title='Delete employee {{emploee.emploee_name}} {{emploee.emploee_surname}}?' type="button"
+            class="btn btn-danger btn-sm ml-2" title="Delete employee {{emploee.emploee_name}}"
             aria-label="cancel delete {{emploee.emploee_name}}"><i class="fas fa-user-minus"></i></a>
     </div>
 </div>
