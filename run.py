@@ -21,7 +21,7 @@ def get_shifts():
     return render_template("pages/shifts.html", shifts=all_shifts)
 
 
-@APP.route('/edit_shift/<shift_id>')
+@APP.route('/edit-shift/<shift_id>')
 def edit_shift(shift_id):
     this_shift = MONGO.db.shifts.find_one({"_id": ObjectId(shift_id)})
     emploee_one = MONGO.db.emploees.find()
@@ -33,7 +33,7 @@ def edit_shift(shift_id):
     return render_template('pages/editshift.html', calendar=all_days, shift=this_shift, emploee_1=emploee_one, emploee_2=emploee_two, emploee_3=emploee_three, emploee_4=emploee_four, emploee_5=emploee_five)
 
 
-@APP.route('/update_shift/<shift_id>', methods=["POST"])
+@APP.route('/update-shift/<shift_id>', methods=["POST"])
 def update_shift(shift_id):
     shifts = MONGO.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
@@ -48,7 +48,7 @@ def update_shift(shift_id):
     return redirect(url_for('get_shifts'))
 
 
-@APP.route('/delete_shift/<shift_id>')
+@APP.route('/delete-shift/<shift_id>')
 def delete_shift(shift_id):
     shifts = MONGO.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
@@ -63,7 +63,7 @@ def delete_shift(shift_id):
     return redirect(url_for('get_shifts'))
 
 
-@APP.route('/delete_one/<shift_id>/<emploee_one>')
+@APP.route('/delete-one/<shift_id>/<emploee_one>')
 def delete_one(shift_id, emploee_one):
     shifts = MONGO.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
@@ -74,7 +74,7 @@ def delete_one(shift_id, emploee_one):
     return redirect(url_for('get_shifts'))
 
 
-@APP.route('/delete_two/<shift_id>/<emploee_two>')
+@APP.route('/delete-two/<shift_id>/<emploee_two>')
 def delete_two(shift_id, emploee_two):
     shifts = MONGO.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
@@ -85,7 +85,7 @@ def delete_two(shift_id, emploee_two):
     return redirect(url_for('get_shifts'))
 
 
-@APP.route('/delete_three/<shift_id>/<emploee_three>')
+@APP.route('/delete-three/<shift_id>/<emploee_three>')
 def delete_three(shift_id, emploee_three):
     shifts = MONGO.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
@@ -96,7 +96,7 @@ def delete_three(shift_id, emploee_three):
     return redirect(url_for('get_shifts'))
 
 
-@APP.route('/delete_four/<shift_id>/<emploee_four>')
+@APP.route('/delete-four/<shift_id>/<emploee_four>')
 def delete_four(shift_id, emploee_four):
     shifts = MONGO.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
@@ -107,7 +107,7 @@ def delete_four(shift_id, emploee_four):
     return redirect(url_for('get_shifts'))
 
 
-@APP.route('/delete_five/<shift_id>/<emploee_five>')
+@APP.route('/delete-five/<shift_id>/<emploee_five>')
 def delete_five(shift_id, emploee_five):
     shifts = MONGO.db.shifts
     shifts.update({'_id': ObjectId(shift_id)},
@@ -118,20 +118,20 @@ def delete_five(shift_id, emploee_five):
     return redirect(url_for('get_shifts'))
 
 
-@APP.route('/get_emploees')
+@APP.route('/get-emploees')
 def get_emploees():
     all_emploees = MONGO.db.emploees.find()
     return render_template('pages/emploees.html', emploees=all_emploees)
 
 
-@APP.route('/insert_emploee', methods=['POST'])
+@APP.route('/insert-emploee', methods=['POST'])
 def insert_emploee():
     emploees = MONGO.db.emploees
     emploees.insert_one(request.form.to_dict())
     return redirect(url_for('get_emploees'))
 
 
-@APP.route('/update_emploee/<emploee_id>', methods=["POST"])
+@APP.route('/update-emploee/<emploee_id>', methods=["POST"])
 def update_emploee(emploee_id):
     emploees = MONGO.db.emploees
     emploees.update({'_id': ObjectId(emploee_id)},
@@ -147,7 +147,7 @@ def update_emploee(emploee_id):
     return redirect(url_for('get_emploees'))
 
 
-@APP.route('/delete_emploee/<emploee_id>')
+@APP.route('/delete-emploee/<emploee_id>')
 def delete_emploee(emploee_id):
     MONGO.db.emploees.remove({'_id': ObjectId(emploee_id)})
     return redirect(url_for('get_emploees'))
