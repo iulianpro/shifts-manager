@@ -17,18 +17,20 @@ MONGO = PyMongo(APP)
 
 @APP.route('/')
 def get_shifts():
-    return render_template("pages/shifts.html", shifts=MONGO.db.shifts.find())
+    all_shifts = MONGO.db.shifts.find()
+    return render_template("pages/shifts.html", shifts=all_shifts)
 
 
 @APP.route('/edit_shift/<shift_id>')
 def edit_shift(shift_id):
     this_shift = MONGO.db.shifts.find_one({"_id": ObjectId(shift_id)})
-    emploee_one = MONGO.db.emploees
-    emploee_two = MONGO.db.emploees
-    emploee_three = MONGO.db.emploees
-    emploee_four = MONGO.db.emploees
-    emploee_five = MONGO.db.emploees
-    return render_template('pages/editshift.html', calendar=MONGO.db.dates.find(), shift=this_shift, emploee_1=emploee_one.find(), emploee_2=emploee_two.find(), emploee_3=emploee_three.find(), emploee_4=emploee_four.find(), emploee_5=emploee_five.find())
+    emploee_one = MONGO.db.emploees.find()
+    emploee_two = MONGO.db.emploees.find()
+    emploee_three = MONGO.db.emploees.find()
+    emploee_four = MONGO.db.emploees.find()
+    emploee_five = MONGO.db.emploees.find()
+    all_days = MONGO.db.dates.find()
+    return render_template('pages/editshift.html', calendar=all_days, shift=this_shift, emploee_1=emploee_one, emploee_2=emploee_two, emploee_3=emploee_three, emploee_4=emploee_four, emploee_5=emploee_five)
 
 
 @APP.route('/update_shift/<shift_id>', methods=["POST"])
