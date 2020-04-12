@@ -20,14 +20,16 @@
         <div class="row no-gutters">
             <div class="col-lg-2 left-area">
                 <div class="left-menu">
-                    <a type="button" class="btn btn-light btn-lg btn-block" href="{{url_for('get_shifts')}}">
+                    <a type="button" class="btn btn-light btn-lg btn-block" title="View calendar"
+                        href="{{url_for('get_shifts')}}">
                         <h6 class="m-0">View Calendar</h6>
                     </a>
                     <a type="button" class="btn btn-light btn-lg btn-block" data-toggle="modal" href="#add_emploee">
                         <h6 class="m-0">Add Employee</h6>
                     </a>
                     {% include 'components/addform-emploee.html' %}
-                    <a type="button" class="btn btn-light btn-lg btn-block mt-2" href="{{url_for('get_emploees')}}">
+                    <a type="button" class="btn btn-light btn-lg btn-block mt-2" title="Manage employee"
+                        href="{{url_for('get_emploees')}}">
                         <h6 class="m-0">Manage Employee</h6>
                     </a>
                 </div>

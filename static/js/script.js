@@ -100,4 +100,20 @@ $(document).ready(function () {
             }
         }
     });
+
+    $("[title|='View calendar'],[title|='Manage employee'],[title^='Erase']").click(function () {
+        $.confirm({
+            boxWidth: '72px',
+            useBootstrap: false,
+            icon: 'fa fa-spinner fa-spin',
+            draggable: false,
+            title: false,
+            buttons: {
+                yes: {
+                    isHidden: true
+                }
+            }
+        });
+        location.href = this.$target.attr('href');
+    })
 });
