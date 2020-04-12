@@ -9,11 +9,13 @@ $(document).ready(function () {
     });
 
     $("[title|='Delete shift']").confirm({
+        animateFromElement: false,
+        animation: 'zoom',
         columnClass: 'col-md-4 col-md-offset-4',
         draggable: false,
         backgroundDismissAnimation: 'glow',
         type: 'red',
-        typeAnimated: true,
+        typeAnimated: false,
         buttons: {
             Cancel: {
                 btnClass: 'btn-default'
@@ -22,6 +24,8 @@ $(document).ready(function () {
                 btnClass: 'btn-red',
                 action: function () {
                     $.confirm({
+                        animateFromElement: false,
+                        animation: 'zoom',
                         boxWidth: '72px',
                         useBootstrap: false,
                         icon: 'fa fa-spinner fa-spin',
@@ -40,11 +44,13 @@ $(document).ready(function () {
     });
 
     $("[title|='Edit shift']").confirm({
+        animateFromElement: false,
+        animation: 'zoom',
         columnClass: 'col-md-4 col-md-offset-4',
         draggable: false,
         backgroundDismissAnimation: 'glow',
         type: 'orange',
-        typeAnimated: true,
+        typeAnimated: false,
         buttons: {
             Cancel: {
                 btnClass: 'btn-default'
@@ -53,6 +59,8 @@ $(document).ready(function () {
                 btnClass: 'btn-warning',
                 action: function () {
                     $.confirm({
+                        animateFromElement: false,
+                        animation: 'zoom',
                         boxWidth: '72px',
                         useBootstrap: false,
                         icon: 'fa fa-spinner fa-spin',
@@ -71,11 +79,13 @@ $(document).ready(function () {
     });
 
     $("[title^='Delete employee']").confirm({
+        animateFromElement: false,
+        animation: 'zoom',
         columnClass: 'col-md-4 col-md-offset-4',
         draggable: false,
         backgroundDismissAnimation: 'glow',
         type: 'red',
-        typeAnimated: true,
+        typeAnimated: false,
         buttons: {
             Cancel: {
                 btnClass: 'btn-default'
@@ -84,6 +94,8 @@ $(document).ready(function () {
                 btnClass: 'btn-red',
                 action: function () {
                     $.confirm({
+                        animateFromElement: false,
+                        animation: 'zoom',
                         boxWidth: '72px',
                         useBootstrap: false,
                         icon: 'fa fa-spinner fa-spin',
@@ -103,6 +115,8 @@ $(document).ready(function () {
 
     $("[title|='View calendar'],[title|='Manage employee'],[title^='Erase']").click(function () {
         $.confirm({
+            animateFromElement: false,
+            animation: 'zoom',
             boxWidth: '72px',
             useBootstrap: false,
             icon: 'fa fa-spinner fa-spin',
