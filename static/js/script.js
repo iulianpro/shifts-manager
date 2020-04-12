@@ -40,4 +40,36 @@ $(document).ready(function () {
             }
         }
     });
+
+    $("[title|='Edit shift']").confirm({
+        columnClass: 'col-md-4 col-md-offset-4',
+        draggable: false,
+        backgroundDismissAnimation: 'glow',
+        type: 'orange',
+        typeAnimated: true,
+        buttons: {
+            Cancel: {
+                btnClass: 'btn-default'
+            },
+            Edit: {
+                btnClass: 'btn-warning',
+                action: function () {
+                    $.confirm({
+                        icon: 'fa fa-spinner fa-spin',
+                        draggable: false,
+                        defaultButtons: false,
+                        title: false,
+                        smoothContent: false,
+                        content: false,
+                        buttons: {
+                            yes: {
+                                isHidden: true
+                            }
+                        }
+                    });
+                    location.href = this.$target.attr('href');
+                }
+            }
+        }
+    });
 });
