@@ -2,7 +2,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-body">
-                <form action="{{url_for('update_emploee', emploee_id=emploee._id)}}" method="POST">
+                <form action="{{url_for('update_emploee', emploee_id=emploee._id)}}" method="POST" id="editform">
                     <div class="form-row mt-3">
                         <div class="col">
                             <h6 class="text-white text-bold text-center">You are updating {{emploee.emploee_name}}

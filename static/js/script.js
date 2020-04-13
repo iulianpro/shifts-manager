@@ -113,7 +113,7 @@ $(document).ready(function () {
         }
     });
 
-    $("[title|='View calendar'],[title|='Manage employee'],[title^='Erase'],[title|='UPDATE Employee'],[title|='ADD Emaployee']").click(function () {
+    $("[title|='View calendar'],[title|='Manage employee'],[title^='Erase']").click(function () {
         $.confirm({
             animateFromElement: false,
             animation: 'zoom',
@@ -128,5 +128,22 @@ $(document).ready(function () {
                 }
             }
         });
-    })
+    });
+
+    $('#addform,#editform').submit(function () {
+        $.confirm({
+            animateFromElement: false,
+            animation: 'zoom',
+            boxWidth: '72px',
+            useBootstrap: false,
+            icon: 'fa fa-spinner fa-spin',
+            draggable: false,
+            title: false,
+            buttons: {
+                yes: {
+                    isHidden: true
+                }
+            }
+        });
+    });
 });
