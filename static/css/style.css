@@ -97,7 +97,7 @@ body {
     padding: 15px 10px;
     border: 1px solid #f3f3f3;
     -webkit-box-shadow: 5px 5px 5px #b0b0b0;
-    box-shadow: 5px 5px 5px #b0b0b0;
+            box-shadow: 5px 5px 5px #b0b0b0;
 }
 
 .emploee-image {
@@ -166,11 +166,6 @@ hr {
 
 .jconfirm .jconfirm-box {
     padding: 25px 15px 0;
-}
-
-.jconfirm.jconfirm-light .jconfirm-box .jconfirm-title-c .jconfirm-icon-c {
-    margin-right: 0;
-    font-size: 30px;
 }
 
 @media (min-width: 576px) {
