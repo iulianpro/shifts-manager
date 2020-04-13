@@ -128,6 +128,5 @@ $(document).ready(function () {
                 }
             }
         });
-        location.href = this.$target.attr('href');
     })
 });
