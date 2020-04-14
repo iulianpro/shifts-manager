@@ -75,6 +75,8 @@ body {
 
 .form-area {
     padding: 10px;
+    background-color: #4198f4;
+    min-height: 70vh;
 }
 
 .form-label {
