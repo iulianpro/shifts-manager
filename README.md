@@ -58,7 +58,7 @@ As I mentioned above, a later version of this application will have more functio
 > ## Technologies Used
 To create this website, several technologies were used, as well as some frameworks, libraries and tools detailed below:
 
-| Technologies Used |
+|   |   |   |   |   |
 |---|---|---|---|---|
 |[HTML](https://www.w3schools.com/html/default.asp) |[Flask](https://flask.palletsprojects.com/en/1.1.x/) |[Jinja](https://jinja.palletsprojects.com/en/2.11.x/) |[CSS validator](https://jigsaw.w3.org/css-validator/) |[Heroku](https://jinja.palletsprojects.com/en/2.11.x/) |
 |[CSS](https://www.w3schools.com/css/default.asp) |[MongoDB](https://www.mongodb.com/) |[Google Fonts](https://jigsaw.w3.org/css-validator/) |[CSS Autoprefixer](https://autoprefixer.github.io/) |[Chrome DevTools](https://autoprefixer.github.io/) |
