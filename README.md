@@ -56,6 +56,17 @@ This first version of the application contains basic functionalities. In the fut
 As I mentioned above, a later version of this application will have more functionalities such as the possibility of the user, in the manager's responsibility, to send to each employee his own work schedule, the possibility that the manager will see in time. real how many hours of work has at any given time each employee in shifts manager, the possibility for the application to calculate the gross income of each employee based on an hourly wage, the functionality that when removing an employee from the database, it will be erased in a way automatically and from working shifts, the possibility of displaying working shifts from the employee's perspective, respectively to be able to easily visualize on what days he works and on which days he is off or on vacation, as the case may be.
 
 > ## Technologies Used
+To create this website, several technologies were used, as well as some frameworks, libraries and tools detailed below:
+
+|[HTML](https://www.w3schools.com/html/default.asp) |[Flask](https://flask.palletsprojects.com/en/1.1.x/) |[Jinja](https://jinja.palletsprojects.com/en/2.11.x/) |[CSS validator](https://jigsaw.w3.org/css-validator/) |[Heroku](https://jinja.palletsprojects.com/en/2.11.x/) |
+
+|[CSS](https://www.w3schools.com/css/default.asp) |[MongoDB](https://www.mongodb.com/) |[Google Fonts](https://jigsaw.w3.org/css-validator/) |[CSS Autoprefixer](https://autoprefixer.github.io/) |[Chrome DevTools](https://autoprefixer.github.io/) |
+
+|[Python](https://www.python.org/) |[PyMongo](https://api.mongodb.com/python/current/) |[jQuery Confirm](http://craftpip.github.io/jquery-confirm/) |[VS Code](https://autoprefixer.github.io/) |[Wireframe](https://wireframe.cc/) |
+
+|[Boostrap](https://getbootstrap.com) |[Gunicorn](https://gunicorn.org/) |[Font Awesome](https://fontawesome.com/) |[Git](https://git-scm.com/) |[Hnet](https://hnet.com/png-to-ico/) |
+
+|[jQuery](https://jquery.com/) |[PopperJS](https://popper.js.org/) |[HTML Validator](https://validator.w3.org/) |[GitHub](https://github.com/) | |
 
 > ## Testing
 
