@@ -38,9 +38,9 @@ The application was structured in two main components, the first working shifts 
 ### Surface
 The main color used in this project is #007bff and for the buttons I chose suggestive colors, respectively #ffc107 for editing, and #dc3545 for deletion.
 
-![#007bff](https://placehold.it/75x20/007bff/007bff) #007bff
-![#ffc107](https://placehold.it/75x20/ffc107/ffc107) #ffc107
-![#dc3545](https://placehold.it/75x20/dc3545/dc3545) #dc3545
+* ![#007bff](https://placehold.it/75x20/007bff/007bff) #007bff
+* ![#ffc107](https://placehold.it/75x20/ffc107/ffc107) #ffc107
+* ![#dc3545](https://placehold.it/75x20/dc3545/dc3545) #dc3545
 
 > ## Features
 ### Existing Features
