@@ -61,10 +61,10 @@ The main color used in this project is ```#007bff``` and for the buttons I chose
 * ![#ffc107](https://placehold.it/75x20/ffc107/ffc107) #ffc107
 * ![#dc3545](https://placehold.it/75x20/dc3545/dc3545) #dc3545
 
+### ![#2b4438](https://placehold.it/800x20/ffffff/ffffff) [⬆](https://github.com/iulianpro/shifts-manager#table-of-contents)
+
 > ## Features
 This first version of the application contains basic functionalities. In the future, I want to develop this application to bring more functionality, which I have detailed below.
-
-### ![#2b4438](https://placehold.it/800x20/ffffff/ffffff) [⬆](https://github.com/iulianpro/shifts-manager#table-of-contents)
 
 ### Existing Features
 * **View Calendar or Home** - in this section the user can take several actions, he can identify a working day so as to bring employees for that working day, he can delete all the employees from a certain working day and also he can delete one employee at a time. The delete operation on the backend is actually an update of the database, so that when the user deletes an employee or an entire work shift, an empty string is transmitted to the database. Considering that the application communicates with a database and thus delays in operation may occur, for a better user experience, I used an external jQuery plugin so that during waiting times, the application will display a spinner that suggests the idea of uploading data. The same plugin is used to display a dialog window, in which the user confirms his actions.
