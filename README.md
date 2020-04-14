@@ -36,7 +36,7 @@ The application was structured in two main components, the first working shifts 
 * [Desktop wireframes](https://github.com/iulianpro/shifts-manager/tree/master/wireframes/desktop);
 
 ### Surface
-The main color used in this project is #007bff and for the buttons I chose suggestive colors, respectively #ffc107 for editing, and #dc3545 for deletion.
+The main color used in this project is ```#007bff``` and for the buttons I chose suggestive colors, respectively ```#ffc107``` for editing, and ```#dc3545``` for deletion.
 
 * ![#007bff](https://placehold.it/75x20/007bff/007bff) #007bff
 * ![#ffc107](https://placehold.it/75x20/ffc107/ffc107) #ffc107
