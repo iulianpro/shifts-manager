@@ -3,6 +3,25 @@
 ![Shifts Manager](https://raw.githubusercontent.com/iulianpro/shifts-manager/master/wireframes/multidevices.png)
 
 > ## Table of Contents
+* [UX](https://github.com/iulianpro/shifts-manager)
+    - [Project goals](https://github.com/iulianpro/shifts-manager)
+    - [Audience goals](https://github.com/iulianpro/shifts-manager)
+    - [Website owner goals](https://github.com/iulianpro/shifts-manager)
+    - [Strategy](https://github.com/iulianpro/shifts-manager)
+    - [Scope](https://github.com/iulianpro/shifts-manager)
+    - [Structure](https://github.com/iulianpro/shifts-manager)
+    - [Skeleton](https://github.com/iulianpro/shifts-manager)
+    - [Surface](https://github.com/iulianpro/shifts-manager)
+* [Features](https://github.com/iulianpro/shifts-manager)
+    - [Existing Features](https://github.com/iulianpro/shifts-manager)
+    - [Left to Implement](https://github.com/iulianpro/shifts-manager)
+* [Technologies Used](https://github.com/iulianpro/shifts-manager)
+* [Testing](https://github.com/iulianpro/shifts-manager)
+* [Deployment](https://github.com/iulianpro/shifts-manager)
+* [Credits](https://github.com/iulianpro/shifts-manager)
+    - [Content](https://github.com/iulianpro/shifts-manager)
+    - [Media](https://github.com/iulianpro/shifts-manager)
+    - [Acknowledgements](https://github.com/iulianpro/shifts-manager)
 
 > ## UX
 
