@@ -15,7 +15,8 @@ The main purpose in the real world for which I designed this application was to 
 * to be able to use the application on any device, at the desk of a desktop or laptop and on the move from the tablet or mobile;
 
 ### Website owner goals
-As I mentioned above the main purpose in the real world for which I designed this application was to provide the employer I currently work with an easy-to-understand and used tool for generating work shifts, thus replacing the use of excel for this.
+As I mentioned above the main purpose in the real world for which I designed this application was to provide the employer I currently work with an easy-to-understand and used tool for generating work shifts, thus replacing the use of excel for this. In addition, I intend to develop this application to bring much more functionality, to make it more complex, features that I will detail below. At the same time, this application can be transformed into a product that may in the future be marketed on the profile market.
+
 ### Strategy
 ### Scope
 ### Structure
