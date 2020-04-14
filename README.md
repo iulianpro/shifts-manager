@@ -97,8 +97,8 @@ To create this website, several technologies were used, as well as some framewor
 
 > ## Deployment
 For deployment of this project I used Heroku, the following steps were taken:
-1. In bash I logged in to Heroku ```heroku login``;
-2. In bash I created a new unique heroku application ```heroku created iulianpro-shifts-manager```;
+1. In bash I logged in to Heroku ```heroku login```;
+2. In bash I created a new unique heroku application ```heroku create iulianpro-shifts-manager```;
 3. I checked new remote created ```git remote -v```;
 4. I Installed gunicorn by typing the following in bash ```pip install gunicorn```;
 5. I created a file named "Procfile" that hosts the line ```web gunicorn run:APP```;
