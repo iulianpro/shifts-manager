@@ -43,8 +43,19 @@ The main color used in this project is ```#007bff``` and for the buttons I chose
 * ![#dc3545](https://placehold.it/75x20/dc3545/dc3545) #dc3545
 
 > ## Features
+This first version of the application contains basic functionalities. In the future, I want to develop this application to bring more functionality, which I have detailed below.
+
 ### Existing Features
+* **View Calendar or Home** - in this section the user can take several actions, he can identify a working day so as to bring employees for that working day, he can delete all the employees from a certain working day and also he can delete one employee at a time. The delete operation on the backend is actually an update of the database, so that when the user deletes an employee or an entire work shift, an empty string is transmitted to the database.
+
+Considering that the application communicates with a database and thus delays in operation may occur, for a better user experience, I used an external jQuery plugin so that during waiting times, the application will display a spinner that suggests the idea of uploading data. The same plugin is used to display a dialog window, in which the user confirms his actions.
+
+* **Add Employee** - this section is a window with a modal bootstrap form in which the user fills in the data of a new employee, which can later be used to update a work shift. As in the previous section, for a better user experience, I used the same jQuery plugin that displays a spinner to suggest uploading data to the database.
+
+* **Manage Employee** - this section displays all employees in the database. The user can edit an employee's data or delete it entirely from the database. Data editing is also done in a modal boostrap form. To prevent an employee from being accidentally deleted, I used the same jQuery external tool that displays a dialog box where the user confirms the previous command. On editing an employee's avatar is automatically updated according to the selection made in the gender field, if "F" is selected the female avatar is displayed, respectively if "M" is selected the male avatar is displayed.
+
 ### Left to Implement
+As I mentioned above, a later version of this application will have more functionalities such as the possibility of the user, in the manager's responsibility, to send to each employee his own work schedule, the possibility that the manager will see in time. real how many hours of work has at any given time each employee in shifts manager, the possibility for the application to calculate the gross income of each employee based on an hourly wage, the functionality that when removing an employee from the database, it will be erased in a way automatically and from working shifts, the possibility of displaying working shifts from the employee's perspective, respectively to be able to easily visualize on what days he works and on which days he is off or on vacation, as the case may be.
 
 > ## Technologies Used
 
