@@ -58,14 +58,12 @@ As I mentioned above, a later version of this application will have more functio
 > ## Technologies Used
 To create this website, several technologies were used, as well as some frameworks, libraries and tools detailed below:
 
+| Technologies Used |
+|---|---|---|---|---|
 |[HTML](https://www.w3schools.com/html/default.asp) |[Flask](https://flask.palletsprojects.com/en/1.1.x/) |[Jinja](https://jinja.palletsprojects.com/en/2.11.x/) |[CSS validator](https://jigsaw.w3.org/css-validator/) |[Heroku](https://jinja.palletsprojects.com/en/2.11.x/) |
-
 |[CSS](https://www.w3schools.com/css/default.asp) |[MongoDB](https://www.mongodb.com/) |[Google Fonts](https://jigsaw.w3.org/css-validator/) |[CSS Autoprefixer](https://autoprefixer.github.io/) |[Chrome DevTools](https://autoprefixer.github.io/) |
-
 |[Python](https://www.python.org/) |[PyMongo](https://api.mongodb.com/python/current/) |[jQuery Confirm](http://craftpip.github.io/jquery-confirm/) |[VS Code](https://autoprefixer.github.io/) |[Wireframe](https://wireframe.cc/) |
-
 |[Boostrap](https://getbootstrap.com) |[Gunicorn](https://gunicorn.org/) |[Font Awesome](https://fontawesome.com/) |[Git](https://git-scm.com/) |[Hnet](https://hnet.com/png-to-ico/) |
-
 |[jQuery](https://jquery.com/) |[PopperJS](https://popper.js.org/) |[HTML Validator](https://validator.w3.org/) |[GitHub](https://github.com/) | |
 
 > ## Testing
