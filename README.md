@@ -92,6 +92,11 @@ To create this website, several technologies were used, as well as some framewor
 ### ![#2b4438](https://placehold.it/800x20/ffffff/ffffff) [⬆](https://github.com/iulianpro/shifts-manager#table-of-contents)
 
 > ## Testing
+The aplication was tested both during and after the development of each section separately but also after its completion. I tested all the functionality in the main browsers that run on several operating systems: Chrome, Firefox, Opera, Microsoft Edge and Safari, in Windows 10, Mac OSX 10.14, Android and iOS operating systems. For full responsiveness, for the whole site, I used Bootstrap and tested with [responsivetesttool](http://responsivetesttool.com/) and [responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fiulianpro-shifts-manager.herokuapp.com)
+
+Testing during section development was done primarily with Chrome DevTools, making sure each element works correctly and optimally, including responsiveness across devices. For navbar, I tested the functionality of all links, including the site brand. I also tested toggle and collapse functioning in small and medium devices.
+
+The website has been also tested for HTML and CSS checking and code validation with [HTML Validator](https://validator.w3.org/) and [CSS Validator](https://jigsaw.w3.org/css-validator/).
 
 ### ![#2b4438](https://placehold.it/800x20/ffffff/ffffff) [⬆](https://github.com/iulianpro/shifts-manager#table-of-contents)
 
