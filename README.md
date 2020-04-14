@@ -101,8 +101,13 @@ To create this website, several technologies were used, as well as some framewor
 
 > ## Credits
 ### Content
+Being an application created especially for functionalities and not a website, the project does not contain text. The concept for content creation is a personal one. It was avoided the display of personal data given the GDPR regulations. Possible similarities with real personal data are simply coincidental.
+
 ### Media
+As for the media section, general avatar images were used to avoid displaying real images that could violate the legal regulations regarding personal data (GDPR). The images are licensed for free from a dedicated website.
+
 ### Acknowledgements
+To create this website, an inspiration but at the same time a source from which I learned many technical elements, was W3schoolsas well as from several video resources hosted by Youtube. I would like to thank the Code Institute instructors who are doing a great job and from where I learned a lot in just a few months. I would also like to thank the colleagues with whom I had discussions on the Slack channels, from where I also had to learn. And last but not least, I thank my mentor [Simen Daehlin](https://github.com/Eventyret).
 
 ### ![#2b4438](https://placehold.it/800x20/ffffff/ffffff) [⬆](https://github.com/iulianpro/shifts-manager#table-of-contents)
 
