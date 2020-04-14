@@ -1,6 +1,6 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,700');
 body {
     font-family: "Poppins", sans-serif;
     color: #4d4d4d;
