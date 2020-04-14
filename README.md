@@ -97,7 +97,7 @@ To create this website, several technologies were used, as well as some framewor
 
 > ## Deployment
 For deployment of this project I used Heroku, the following steps were taken:
-1. In bash I logged in to Heroku ```heroku login```;
+1. In bash I logged in to Heroku ```heroku login``;
 2. In bash I created a new unique heroku application ```heroku created iulianpro-shifts-manager```;
 3. I checked new remote created ```git remote -v```;
 4. I Installed gunicorn by typing the following in bash ```pip install gunicorn```;
@@ -105,8 +105,8 @@ For deployment of this project I used Heroku, the following steps were taken:
 6. In bash, I created requirements file with ```pip freeze --local>requirements.txt```;
 7. Using bash, I commited the files create ```git add requirements.txt Procfile``` and ```git commit -m "<Commit Message>"```;
 8. I pushed everything to Heroku ```git push heroku master```;
-9. To set a config variable, I used ```heroku config:set MONGO_URI=mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?RetryWrites=true&w=majority```
-10. The APP was successfully deployed and live at ```https://iulianpro-shifts-manager.herokuapp.com/```
+9. To set a config variable, I used ```heroku config:set MONGO_URI=mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?RetryWrites=true&w=majority```;
+10. The APP was successfully deployed and live at ```https://iulianpro-shifts-manager.herokuapp.com/```.
 
 ### ![#2b4438](https://placehold.it/800x20/ffffff/ffffff) [⬆](https://github.com/iulianpro/shifts-manager#table-of-contents)
 
