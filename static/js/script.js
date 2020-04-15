@@ -8,7 +8,7 @@ $(document).ready(function () {
         $('.navbar-collapse').collapse('hide');
     });
 
-    $("[title|='Delete shift']").confirm({
+    $("[title|='Delete shift'],[title^='Erase']").confirm({
         animateFromElement: false,
         animation: 'zoom',
         columnClass: 'col-md-4 col-md-offset-4',
@@ -113,7 +113,7 @@ $(document).ready(function () {
         }
     });
 
-    $("[title|='View calendar'],[title|='Manage employee'],[title^='Erase']").click(function () {
+    $("[title|='View calendar'],[title|='Manage employee']").click(function () {
         $.confirm({
             animateFromElement: false,
             animation: 'zoom',

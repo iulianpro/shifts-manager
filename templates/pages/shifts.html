@@ -31,6 +31,7 @@
         <a class="d-block p-1 pl-4 pr-2 mb-1 rounded text-truncate small bg-info text-white emploee"
             title="{{shift.emploee_one}}">{{shift.emploee_one}}</a><a class="delete-emploee"
             title="Erase {{shift.emploee_one}}"
+            data-title="You want to delete {{shift.emploee_one}} from {{shift.shift_date}}th day shift"
             href="{{url_for('delete_one', shift_id=shift._id, emploee_one=shift.emploee_one)}}"></a>
         {% endif %}
         {% if shift.emploee_two == '' %}
@@ -39,6 +40,7 @@
         <a class="d-block p-1 pl-4 pr-2 mb-1 rounded text-truncate small bg-info text-white emploee"
             title="{{shift.emploee_two}}">{{shift.emploee_two}}</a><a class="delete-emploee"
             title="Erase {{shift.emploee_two}}"
+            data-title="You want to delete {{shift.emploee_two}} from {{shift.shift_date}}th day shift"
             href="{{url_for('delete_two', shift_id=shift._id, emploee_two=shift.emploee_two)}}"></a>
         {% endif %}
         {% if shift.emploee_three == '' %}
@@ -47,6 +49,7 @@
         <a class="d-block p-1 pl-4 pr-2 mb-1 rounded text-truncate small bg-info text-white emploee"
             title="{{shift.emploee_three}}">{{shift.emploee_three}}</a><a class="delete-emploee"
             title="Erase {{shift.emploee_three}}"
+            data-title="You want to delete {{shift.emploee_three}} from {{shift.shift_date}}th day shift"
             href="{{url_for('delete_three', shift_id=shift._id, emploee_three=shift.emploee_three)}}"></a>
         {% endif %}
         {% if shift.emploee_four == '' %}
@@ -55,6 +58,7 @@
         <a class="d-block p-1 pl-4 pr-2 mb-1 rounded text-truncate small bg-info text-white emploee"
             title="{{shift.emploee_four}}">{{shift.emploee_four}}</a><a class="delete-emploee"
             title="Erase {{shift.emploee_four}}"
+            data-title="You want to delete {{shift.emploee_four}} from {{shift.shift_date}}th day shift"
             href="{{url_for('delete_four', shift_id=shift._id, emploee_four=shift.emploee_four)}}"></a>
         {% endif %}
         {% if shift.emploee_five == '' %}
@@ -63,6 +67,7 @@
         <a class="d-block p-1 pl-4 pr-2 mb-1 rounded text-truncate small bg-info text-white emploee"
             title="{{shift.emploee_five}}">{{shift.emploee_five}}</a><a class="delete-emploee"
             title="Erase {{shift.emploee_five}}"
+            data-title="You want to delete {{shift.emploee_five}} from {{shift.shift_date}}th day shift"
             href="{{url_for('delete_five', shift_id=shift._id, emploee_five=shift.emploee_five)}}"></a>
         {% endif %}
     </div>
