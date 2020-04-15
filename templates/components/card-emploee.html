@@ -1,11 +1,12 @@
+<!-- Card for display each employee -->
 <div class="row">
     <div class="col-5">
         <div class="emploee-image">
-            {% if emploee.gender == 'M' %}
+            {% if emploee.gender == 'M' -%}
             <img class="image" src="{{url_for('static', filename='img/male.png')}}" alt="{{emploee.emploee_name}}">
             {% else %}
             <img class="image" src="{{url_for('static', filename='img/female.png')}}" alt="{{emploee.emploee_name}}">
-            {% endif %}
+            {%- endif %}
         </div>
     </div>
     <div class="col-7">
