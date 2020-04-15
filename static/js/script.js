@@ -1,13 +1,16 @@
 $(document).ready(function () {
+    // Show loading spinner on submit edit shift form
     $('#update-form').on('submit', function () {
         $('#loading').removeClass('d-none');
         $('#loading').addClass('d-inline');
     });
 
+    // Hide collapse navbar on click a link-item
     $('.navbar-nav li').click(function () {
         $('.navbar-collapse').collapse('hide');
     });
 
+    // Targeting delete elements to show confirm dialog box
     $("[title|='Delete shift'],[title^='Erase'],[title^='Delete employee']").confirm({
         animateFromElement: false,
         animation: 'zoom',
@@ -43,6 +46,7 @@ $(document).ready(function () {
         }
     });
 
+    // Targeting edit element to show confirm dialog box 
     $("[title|='Edit shift']").confirm({
         animateFromElement: false,
         animation: 'zoom',
@@ -78,6 +82,7 @@ $(document).ready(function () {
         }
     });
 
+    // Targeting left navbar to show loanding spinner
     $("[title|='View calendar'],[title|='Manage employee']").click(function () {
         $.confirm({
             animateFromElement: false,
@@ -95,6 +100,7 @@ $(document).ready(function () {
         });
     });
 
+    // Targeting forms to show loanding spinner on submit
     $('#addform,#editform').submit(function () {
         $.confirm({
             animateFromElement: false,

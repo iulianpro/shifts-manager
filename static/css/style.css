@@ -1,6 +1,8 @@
 /* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,700');
+
+/* General */
 body {
     font-family: "Poppins", sans-serif;
     color: #4d4d4d;
@@ -9,6 +11,11 @@ body {
     background-color: #ffffff;
 }
 
+.section-app {
+    padding-bottom: 3.125rem;
+}
+
+/* Calendar area */
 .bg-calendar-header, .inner-area, .left-area, .extl-area, .extr-area {
     background-color: #007bff;
 }
@@ -35,20 +42,6 @@ body {
     background-color: #f9f9f9;
 }
 
-.section-app {
-    padding-bottom: 3.125rem;
-}
-
-.left-menu {
-    margin-top: 4.6875rem;
-    margin-left: 1.25rem;
-    margin-right: 1.25rem;
-}
-
-.left-menu a h6 {
-    font-weight: 300;
-}
-
 .day-number {
     font-size: 1.25rem;
     font-weight: 700;
@@ -73,6 +66,18 @@ body {
     opacity: 85%;
 }
 
+/* Left navbar */
+.left-menu {
+    margin-top: 4.6875rem;
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+}
+
+.left-menu a h6 {
+    font-weight: 300;
+}
+
+/* Edit shift */
 .form-area {
     padding: 0.625rem;
     background-color: #4198f4;
@@ -93,6 +98,7 @@ body {
     margin-left: 0.625rem;
 }
 
+/* Manage employee */
 .card-area {
     background-color: #f3f3f3;
     margin: 0.625rem;
@@ -127,6 +133,7 @@ body {
     opacity: 90%;
 }
 
+/* Footer */
 .bg-footer {
     background-color: #007bff;
     color: #f9f9f9;
@@ -156,6 +163,7 @@ hr {
     border-top: 1px solid #f9f9f9;
 }
 
+/* jQuery Confirm plugin */
 .jconfirm .jconfirm-box div.jconfirm-title-c {
     text-align: center;
     font-size: 1.125rem;
@@ -174,6 +182,7 @@ hr {
     font-size: 1.875rem;
 }
 
+/* Media query */
 @media (min-width: 576px) {
     .left-menu {
         margin-top: 4.6875rem;
