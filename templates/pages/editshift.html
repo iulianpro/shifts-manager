@@ -1,4 +1,5 @@
-{% extends 'layout/base.html'%} {% block module %}
+<!-- Edit one shift -->
+{% extends 'layout/base.html'%} {% block module -%}
 <div class="inner-area">
     <div class="form-area">
         <form action="{{ url_for('update_shift', shift_id=shift._id) }}" method="POST" id="update-form">
@@ -9,12 +10,12 @@
                         </h6>
                     </div>
                     <div class="col-md-6 mt-2">
-                        {% for day in calendar %}
+                        {% for day in calendar -%}
                         {% if day.shift_date == shift.shift_date %}
                         <input class="form-control text-center" id="date" name="shift_date" type="text"
                             value="{{day.shift_date}}" readonly>
                         {% endif %}
-                        {% endfor %}
+                        {%- endfor %}
                     </div>
                 </div>
                 <div class="form-row">
@@ -25,9 +26,9 @@
                     <div class="col-md-6">
                         <select class="mt-2 form-control" id="emploee_one" name="emploee_one">
                             <option value="{{shift.emploee_one}}" selected hidden>{{shift.emploee_one}}</option>
-                            {% for empl in emploee_1 %}
+                            {% for empl in emploee_1 -%}
                             <option value="{{empl.emploee_name}}">{{empl.emploee_name}}</option>
-                            {% endfor %}
+                            {%- endfor %}
                         </select>
                     </div>
                 </div>
@@ -39,9 +40,9 @@
                     <div class="col-md-6">
                         <select class="mt-2 form-control" id="emploee_two" name="emploee_two">
                             <option value="{{shift.emploee_two}}" selected hidden>{{shift.emploee_two}}</option>
-                            {% for empl in emploee_2 %}
+                            {% for empl in emploee_2 -%}
                             <option value="{{empl.emploee_name}}">{{empl.emploee_name}}</option>
-                            {% endfor %}
+                            {%- endfor %}
                         </select>
                     </div>
                 </div>
@@ -53,9 +54,9 @@
                     <div class="col-md-6">
                         <select class="mt-2 form-control" id="emploee_three" name="emploee_three">
                             <option value="{{shift.emploee_three}}" selected hidden>{{shift.emploee_three}}</option>
-                            {% for empl in emploee_3 %}
+                            {% for empl in emploee_3 -%}
                             <option value="{{empl.emploee_name}}">{{empl.emploee_name}}</option>
-                            {% endfor %}
+                            {%- endfor %}
                         </select>
                     </div>
                 </div>
@@ -67,9 +68,9 @@
                     <div class="col-md-6">
                         <select class="mt-2 form-control" id="emploee_four" name="emploee_four">
                             <option value="{{shift.emploee_four}}" selected hidden>{{shift.emploee_four}}</option>
-                            {% for empl in emploee_4 %}
+                            {% for empl in emploee_4 -%}
                             <option value="{{empl.emploee_name}}">{{empl.emploee_name}}</option>
-                            {% endfor %}
+                            {%- endfor %}
                         </select>
                     </div>
                 </div>
@@ -81,9 +82,9 @@
                     <div class="col-md-6">
                         <select class="mt-2 form-control" id="emploee_five" name="emploee_five">
                             <option value="{{shift.emploee_five}}" selected hidden>{{shift.emploee_five}}</option>
-                            {% for empl in emploee_5 %}
+                            {% for empl in emploee_5 -%}
                             <option value="{{empl.emploee_name}}">{{empl.emploee_name}}</option>
-                            {% endfor %}
+                            {%- endfor %}
                         </select>
                     </div>
                 </div>
@@ -100,5 +101,4 @@
         </form>
     </div>
 </div>
-
-{% endblock %}
+{%- endblock %}

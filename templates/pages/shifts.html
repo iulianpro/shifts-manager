@@ -1,5 +1,4 @@
-{% extends 'layout/base.html'%} {% block module %}
-
+{% extends 'layout/base.html'%} {% block module -%}
 <div class="row no-gutters d-none d-sm-flex p-1 bg-secondary text-white">
     <h6 class="col-sm pt-2 text-center">Monday</h6>
     <h6 class="col-sm pt-2 text-center">Tuesday</h6>
@@ -9,9 +8,9 @@
     <h6 class="col-sm pt-2 text-center">Saturday</h6>
     <h6 class="col-sm pt-2 text-center">Sunday</h6>
 </div>
-
 <div class="row no-gutters border border-right-0 border-bottom-0">
-    {% for shift in shifts %}
+    {% for shift in shifts -%}
+    <!-- Calendar day {{shift.shift_date}} -->
     <div class="days col-sm p-2 border border-left-0 border-top-0 text-truncate ">
         <div class="row no-gutters">
             <div class="col-3 day-number mb-2">{{shift.shift_date}}</div>
@@ -25,7 +24,7 @@
                     aria-label="delete shift">D</a>
             </div>
         </div>
-        {% if shift.emploee_one == '' %}
+        {% if shift.emploee_one == '' -%}
         <p class="sr-only">Empty</p>
         {% else %}
         <a class="d-block p-1 pl-4 pr-2 mb-1 rounded text-truncate small bg-info text-white emploee"
@@ -33,8 +32,8 @@
             title="Erase {{shift.emploee_one}}"
             data-title="Delete {{shift.emploee_one}} from {{shift.shift_date}}th day shift"
             href="{{url_for('delete_one', shift_id=shift._id, emploee_one=shift.emploee_one)}}"></a>
-        {% endif %}
-        {% if shift.emploee_two == '' %}
+        {%- endif %}
+        {% if shift.emploee_two == '' -%}
         <p class="sr-only">Empty</p>
         {% else %}
         <a class="d-block p-1 pl-4 pr-2 mb-1 rounded text-truncate small bg-info text-white emploee"
@@ -42,8 +41,8 @@
             title="Erase {{shift.emploee_two}}"
             data-title="Delete {{shift.emploee_two}} from {{shift.shift_date}}th day shift"
             href="{{url_for('delete_two', shift_id=shift._id, emploee_two=shift.emploee_two)}}"></a>
-        {% endif %}
-        {% if shift.emploee_three == '' %}
+        {%- endif %}
+        {% if shift.emploee_three == '' -%}
         <p class="sr-only">Empty</p>
         {% else %}
         <a class="d-block p-1 pl-4 pr-2 mb-1 rounded text-truncate small bg-info text-white emploee"
@@ -51,8 +50,8 @@
             title="Erase {{shift.emploee_three}}"
             data-title="Delete {{shift.emploee_three}} from {{shift.shift_date}}th day shift"
             href="{{url_for('delete_three', shift_id=shift._id, emploee_three=shift.emploee_three)}}"></a>
-        {% endif %}
-        {% if shift.emploee_four == '' %}
+        {%- endif %}
+        {% if shift.emploee_four == '' -%}
         <p class="sr-only">Empty</p>
         {% else %}
         <a class="d-block p-1 pl-4 pr-2 mb-1 rounded text-truncate small bg-info text-white emploee"
@@ -60,8 +59,8 @@
             title="Erase {{shift.emploee_four}}"
             data-title="Delete {{shift.emploee_four}} from {{shift.shift_date}}th day shift"
             href="{{url_for('delete_four', shift_id=shift._id, emploee_four=shift.emploee_four)}}"></a>
-        {% endif %}
-        {% if shift.emploee_five == '' %}
+        {%- endif %}
+        {% if shift.emploee_five == '' -%}
         <p class="sr-only">Empty</p>
         {% else %}
         <a class="d-block p-1 pl-4 pr-2 mb-1 rounded text-truncate small bg-info text-white emploee"
@@ -69,14 +68,13 @@
             title="Erase {{shift.emploee_five}}"
             data-title="Delete {{shift.emploee_five}} from {{shift.shift_date}}th day shift"
             href="{{url_for('delete_five', shift_id=shift._id, emploee_five=shift.emploee_five)}}"></a>
-        {% endif %}
+        {%- endif %}
     </div>
-    {% if shift.shift_date % 7 == 0 %}
+    {% if shift.shift_date % 7 == 0 -%}
     <div class="w-100"></div>
     {% endif %}
-    {% endfor %}
-
-    {% for off in range(5) %}
+    {%- endfor %}
+    {% for off in range(5) -%}
     <div
         class="days col-sm p-2 border border-left-0 border-top-0 text-truncate d-none d-sm-inline-block bg-off text-muted">
         <h5 class="row align-items-center">
@@ -85,7 +83,6 @@
             <span class="col-1"></span>
         </h5>
     </div>
-    {% endfor %}
+    {%- endfor %}
 </div>
-
-{% endblock %}
+{%- endblock %}

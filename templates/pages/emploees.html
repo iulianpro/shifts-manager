@@ -1,13 +1,12 @@
-{% extends 'layout/base.html'%} {% block module %}
-
+<!-- All employee -->
+{% extends 'layout/base.html'%} {% block module -%}
 <div class="row no-gutters">
-    {% for emploee in emploees %}
+    {% for emploee in emploees -%}
     <div class="col-md-6 col-xl-4">
         <div class=" card-area">
             {% include 'components/card-emploee.html' %}
         </div>
     </div>
-    {% endfor %}
+    {%- endfor %}
 </div>
-
-{% endblock %}
+{%- endblock %}
