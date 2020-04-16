@@ -13,12 +13,15 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header>
         {% include 'layout/navbar.html' %}
     </header>
 
+    <!-- Section -->
     <section class="container-fluid section-app p-0">
         <div class="row no-gutters">
+            <!-- Left side -->
             <div class="col-lg-2 left-area">
                 <div class="left-menu">
                     <a class="btn btn-light btn-lg btn-block" title="View calendar" href="{{url_for('get_shifts')}}">
@@ -34,6 +37,7 @@
                     </a>
                 </div>
             </div>
+            <!-- Right side -->
             <div class="col-lg-10">
                 <div class="row no-gutters">
                     <div class="col right-area">
@@ -52,6 +56,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         {% include 'layout/footer.html' %}
     </footer>
